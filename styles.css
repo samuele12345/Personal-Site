@@ -1,0 +1,355 @@
+*{
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.separator {
+    pointer-events: none; /* non cliccabile */
+    padding: 0 5px;
+}
+
+
+body {
+  background:
+    linear-gradient(180deg, #f2f6fb, #dde7f2), /* verticale */
+    linear-gradient(
+      90deg,
+      rgba(90, 125, 204, 0.25),
+      transparent 25%,
+      transparent 75%,
+      rgba(90, 125, 204, 0.25)
+    ); /* laterale */
+  background-blend-mode: overlay; /* fa risaltare il blu */
+}
+
+
+
+main{
+    margin-bottom: 30px;
+}
+
+.title-sticky{
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-radius: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: sticky;
+    top: 20px;
+    background: rgba(90, 125, 204, 0.85);
+    z-index: 1;
+}
+
+#header-div{
+    
+    color: grey;
+    background-color: #2F3E5C;
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0px 0px 30px 30px ;
+
+}
+
+#header-div > h1, h2{
+    margin-left: 10px;
+    display: inline-block;
+}
+
+#header-div > h1{
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        2px  2px 0 black;
+}
+
+#header-div > h2{
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        1px  1px 0 black;
+}
+
+
+
+#nav-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: #a8b8d0; /* pensare a un linear gradient
+    per migliorare l'effetto dello sticky */
+    top: 0px;
+    border-bottom: 1px solid black;
+    border-radius: 30px 30px 0px 0px;
+}
+
+#nav-div > ul > li{
+    position: relative; /* mantiene il flusso, serve per eventuali dropdown */
+    border-bottom: 1px solid transparent; /* crea spazio “invisibile” per il hover */
+}
+
+
+
+#nav-div > ul{
+    display: flex;
+}
+
+#nav-div > ul > li:hover{
+    background: linear-gradient(#a8b8d0, #5A7DCC) no-repeat;
+    border-bottom: 1px solid black;
+    display: flex;
+}
+
+
+.link-lists{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+.menu-item{
+    position: relative;
+}
+
+.drop-down{
+    list-style: none;
+    position: absolute;
+    background: rgba(90, 125, 204, 0.85);
+    border-bottom: 1px solid black;
+    border-left: 1px dotted black;
+    padding: 4px 4px;
+    z-index: 2;
+    border-radius: 0px 0px 30px 0px
+}
+
+.titles{
+    top: 20px;
+    display: block;
+    z-index: 1;
+}
+
+.figures, .titles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    margin: 20px 0;
+    position: sticky;
+}
+
+#figure1 > img{
+    height: 300px;
+    width: 300px;
+    border-top: 1px solid #5A7DCC;
+    border-bottom: 1px solid #5A7DCC;
+    border-radius: 5px;
+}
+
+#figure2 > img{
+    height: 50%;
+    width: 50%;
+    border-top: 1px solid #5A7DCC;
+    border-bottom: 1px solid #5A7DCC;
+    border-radius: 5px;
+
+}
+
+#figure3 > img{
+    height: 50%;
+    width: 50%;
+    border-top: 1px solid #5A7DCC;
+    border-bottom: 1px solid #5A7DCC;
+    border-radius: 5px;
+
+}
+
+.figures > figcaption{
+    font-family: italic;
+}
+
+footer{
+    text-align: center;
+    background: #a8b8d0;
+    width: 100;
+    height: auto;
+    border-top: 1px solid black;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.paragraphs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-left: 1px solid #5A7DCC;
+    margin: 40px auto;
+    padding: 12px 32px;
+    max-width: 700px;
+
+    background: linear-gradient(
+        to right,
+        rgba(120, 160, 220, 0.18),
+        rgba(120, 160, 220, 0.06),
+        transparent
+    );
+}
+
+#education-paragraph{
+    border-left: 1px solid #5A7DCC;
+    margin: 40px auto;
+    padding: 12px 32px;
+    max-width: 700px;
+
+    background: linear-gradient(
+        to right,
+        rgba(120, 160, 220, 0.18),
+        rgba(120, 160, 220, 0.06),
+        transparent
+    );
+}
+
+#education-paragraph > .education-ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 0px;
+}
+
+#education-paragraph > #edu-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills-carousel-wrapper{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-top: 20px;
+    max-width: 400px;
+    margin: 40px auto;
+    gap: 10px;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    overflow: hidden;  /* nasconde ciò che esce */
+    scroll-behavior: smooth;
+    width: 100%;
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 15%,
+        black 85%,
+        transparent
+    );
+}
+
+.skill-logo {
+    width: 125px;
+    height: 125px;
+    object-fit: contain;
+    flex-shrink: 0; /* serve a impedire che un elemento all'interno di un contenitore
+    flexbox si rimpicciolisca, anche quando lo spazio disponibile nel contenitore 
+    diventa insufficiente*/
+    border-right: 1px solid #5A7DCC;
+    border-left: 1px solid #5A7DCC;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.emojies > h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right:10px;
+    border-left: 1px solid #5A7DCC;
+    border-right: 1px solid #5A7DCC;
+    border-radius: 5px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    color: grey;
+    text-shadow: 
+        0px 0px 0 black,
+        0px 0px 0 black,
+        0px  0px 0 black,
+        1px  1px 0 black;
+}
+
+.footer-divs{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.footer-divs > ul{
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+.education-ul{
+    list-style: none;
+    padding-bottom: 00px;
+    margin-bottom:0px;
+    border-left: 1px dotted black;
+    margin-bottom: 30px;
+}
+
+.education-paragraph > div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.linea-oriz{
+    height: 1px;
+    width: 10%;
+    background-color: black;
+}

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> About | Personal Site</title>
+        <link href="styles.css" rel="stylesheet">
+        <script src="script.js" defer></script> <!-- con defer carica dopo l'html-->
+    </head>
+
+    <body>
+        <header>
+            <div class="header-divs" id="header-div">
+                <h1>Samuele Riva</h1>
+                <h2> - Aspiring professional programmer</h2>
+            </div>
+
+            <nav>
+                <div class="header-divs" id="nav-div">
+                    <ul class="link-lists">
+                        <li class="menu-item">
+                            <details>
+                                <summary>
+                                    <a href="home.html">About</a>
+                                </summary>
+                                <ul class="drop-down">
+                                    <li><a href="#tiStick1">Introduction</a></li>
+                                    <li><a href="#tiStick2">Skills</a></li>
+                                    <li><a href="#tiStick3">Interests</a></li>
+                                    <li><a href="#tiStick4">Education</a></li>
+                                </ul>
+                            </details> 
+                        </li>
+                        
+                        <li class="separator">|</li>
+                        <li class="menu-item">
+                            <li class="menu-item">
+                                <details>
+                                    <summary>
+                                        <a href="projects.html">Projects</a>
+                                    </summary>
+                                    <ul class="drop-down">
+                                        <li><a href="projects.html#tiStick5">Featured</a></li>
+                                        <li><a href="projects.html#tiStick6">Academic</a></li>
+                                        <li><a href="projects.html#tiStick7">Personal</a></li>
+                                    </ul>
+                                </details> 
+                            </li>
+                        </li>
+                        <li class="separator">|</li>
+                        <li class="menu-item">
+                            <li class="menu-item">
+                                <details>
+                                    <summary>
+                                        <a href="#title-about">Contact</a>
+                                    </summary>
+                                    <ul class="drop-down">
+                                        <li><a href="#tiStick1">Email</a></li>
+                                        <li><a href="#tiStick1">Linkedin</a></li>
+                                        <li><a href="#tiStick1">Github</a></li>
+                                    </ul>
+                                </details> 
+                            </li>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            
+            
+        </header>
+
+        <main>
+
+            <section class="sections" id="Introduction-section">
+                <div class="titles">
+                    <h3 class="title-sticky" id="tiStick1"><strong>Introduction</strong></h3>
+                </div>
+            
+                <figure class="figures" id="figure1">
+            
+                    <br>
+                    <img src="img/immagine cv modificata.png"
+                        alt="PictureOfMe">
+                    <figcaption>Picture of Me</figcaption>
+                </figure>
+            
+            
+                <div class="paragraphs" id="opening-paragraph">
+                    <p><strong>Hi, i'm Samuele</strong></p>
+                    <br>
+                    <p> I'm a Computer Science graduate with a strong interest in software
+                        development, automation, and applied artificial intelligence. I enjoy
+                        building practical solutions that simplify complex processes,
+                        especially when technology can be used to improve efficiency and
+                        accessibility in real-world contexts. Throughout my academic
+                        and professional experiences,I have developed a solid foundation in
+                        programming, problem solving, and system design, while continuously
+                        expanding my knowledge in areas such as Machine Learning, workflow
+                        automation, and hardware. I am particularly motivated by learning
+                        through hands-on projects and by exploring how emerging technologies
+                        can be integrated into everyday workflows to create meaningful impact.
+                    </p>
+                </div>
+            </section>
+
+            <section class="sections" id="skills-section">
+                <div class="titles">
+                    <h3 class="title-sticky" id="tiStick2"><strong>Skills</strong></h3>
+                </div>
+            
+                <div class="skills-carousel-wrapper">
+                    <!--Qui l’elemento ha due classi separate: arrow e left
+                            in caso serva agire sulle componenti separate-->
+                    <!--Per selezionarlo in CSS o JS, si usa .arrow.left → tutte 
+                            le classi devono essere separate da un punto nel selettore.-->
+                    <button class="arrow left">‹</button>
+            
+                    <div class="carousel">
+                        <img class="skill-logo" src="img/html-logo.png">
+                        <img class="skill-logo" src="img/css-logo.png">
+                        <img class="skill-logo" src="img/js-logo.png">
+                        <img class="skill-logo" src="img/java-2-logo.png">
+                        <img class="skill-logo" src="img/python-logo.png">
+                        <img class="skill-logo" src="img/n8n-2-logo.png">
+                        <img class="skill-logo" src="img/c++-logo.png">
+                    </div>
+            
+                    <button class="arrow right">›</button>
+                </div>
+            
+                <div class="paragraphs" id="skills-paragraph">
+                    <p><strong>My skills and experience</strong></p>
+                    <br>
+            
+                    <p>I hold a solid academic and practical background in Computer Science, with hands-on experience in software
+                        development, automation, and applied artificial intelligence. During my internal internship project at ATS
+                        Insubria, I worked in a healthcare-oriented environment where I developed solutions aimed at improving
+                        operational efficiency and access to information. In particular, I contributed to the design and
+                        implementation of a Retrieval-Augmented Generation (RAG) chatbot based on large language models, built using
+                        Copilot Studio, with the goal of enabling both internal staff and assisted users to quickly retrieve
+                        accurate information from extensive and heterogeneous document repositories. Alongside this, I designed and
+                        implemented an automated OCR-based workflow using n8n, capable of extracting structured data from medical
+                        prescriptions and securely storing it in a database, strengthening my skills in workflow automation, data
+                        processing, and system integration.
+            
+                        In parallel, my experience as a private tutor and instructor at Happy School allowed me to consolidate my
+                        knowledge of programming languages such as Java, HTML, CSS, JavaScript, and C++, while also improving my
+                        ability to explain complex technical concepts clearly and effectively. Teaching both in structured
+                        educational environments and through independent one-to-one lessons enhanced my communication skills,
+                        adaptability, and problem-solving mindset, as well as my ability to prepare clear documentation and study
+                        materials.
+            
+                        Beyond strictly technical roles, my work experience in high-intensity environments such as McDonald’s and
+                        food delivery services contributed significantly to my professional growth. These roles strengthened my
+                        organizational skills, time management, reliability, and ability to work efficiently under pressure, often
+                        within fast-paced teams and continuously changing workflows. I also gained familiarity with digital ordering
+                        and management systems, reinforcing my confidence in interacting with technology in real-world operational
+                        contexts. Overall, these combined experiences have shaped me into a versatile professional with strong
+                        technical foundations, a proactive attitude toward learning, and a practical, results-oriented approach to
+                        problem solving.
+                    </p>
+                </div>
+            </section>
+
+            <section class="sections" id="Interests-section">
+                <div class="titles">
+                    <h3 class="title-sticky" id="tiStick3"><strong>Interests</strong></h3>
+                </div>
+
+                <div class="emojies" id="hobby-emojies">
+                    <h4> 🎮  🍳  🏋️  📖 </h4>
+                </div>
+
+                
+
+                <div class="paragraphs" id="opening-paragraph">
+                    <p><strong>My hobbies</strong></p>
+                    <br>
+                    <p> Beyond technology, I cultivate a variety of interests that
+                        help me maintain creativity, balance, and discipline.
+                        I practice 3D animation as a personal hobby, which 
+                        allows me to explore visual design, spatial thinking, 
+                        and creative problem solving. I also enjoy cooking, 
+                        an activity that combines experimentation and precision, 
+                        as well as going to the gym, which helps me stay focused 
+                        and consistent over time. Finally, reading plays an important 
+                        role in my routine, supporting continuous learning and 
+                        broadening my perspective both professionally and personally.
+                    </p>
+                </div>
+
+                
+            </section>
+
+            <section class="education-section">
+
+                <div class="titles">
+                    <h3 class="title-sticky" id="tiStick4"><strong>Education</strong></h3>
+                </div>
+
+                <div id="education-paragraph">
+                    <p id="edu-title"><strong>My education</strong></p>
+                    <br>
+                    <ul class="education-ul" id="ed-ul-1">
+                        <li>Galileo Galilei Scientific High School, Erba </li>
+                        <li>June 2022</li>
+                        <li>High School Diploma</li>
+                    </ul>
+
+                    <ul class="education-ul" id="ed-ul-2">
+                        <li>University of Insubria, Como </li>
+                        <li>October 2025</li>
+                        <li>Bachelor’s Degree in Computer Science</li>
+                    </ul>
+
+                    <ul class="education-ul" id="ed-ul-3">
+                        <li>Codedex, HTML</li>
+                        <li>January 2026</li>
+                        <li>Certificate of completion</li>
+                    </ul>
+                </div>
+            </section>
+
+            
+        </main>
+
+        <footer class="footer">
+            <div class="footer-divs" id="footer-identity">
+                <ul>
+                    <li> Samuele Riva</li>
+                    <li> Aspiring Software Developer</li>
+                    <li> 01/2026</li>
+                </ul>
+            </div>
+
+            <div class="linea-oriz"><hr></div>
+
+            <div class="footer-divs" id="footer-email&github">
+                <ul>
+                    <li> email: samueleriva2016@gmail.com</li>
+                    <li> <a href="https://github.com/samuele12345">GitHub</a></li>
+                </ul>
+                
+            </div>
+
+            <div class="linea-oriz"><hr></div>
+
+            <div class="footer-divs" id="footer-phrase">
+                <ul>
+                    <li> Built with curiosity </li>
+                    <li> and continuous learning</li>
+                </ul>
+                
+            </div>
+        </footer>
+    </body>
+</html>
