@@ -3,41 +3,45 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> About | Personal Site</title>
+        <title> Projects | Personal Site</title>
         <link href="styles.css" rel="stylesheet">
         <script src="script.js" defer></script> <!-- con defer carica dopo l'html-->
     </head>
 
     <body>
         <header>
-            <div class="header-divs" id="header-div">
-                <h1>Samuele Riva</h1>
-                <h2> - Aspiring professional programmer</h2>
-            </div>
+            <div id="main-header">
+                <div class="header-divs" id="header-div">
+                    <img id="img-logo" src="img\logoPersonale.png">
+                    <h1>Samuele Riva</h1>
+                    <h2>Personal Site</h2>
+                </div>
 
-            <nav>
-                <div class="header-divs" id="nav-div">
-                    <ul class="link-lists">
-                        <li class="menu-item">
-                            <details>
-                                <summary>
-                                    <a href="home.html">About</a>
-                                </summary>
-                                <ul class="drop-down">
-                                    <li><a href="home.html#tiStick1">Introduction</a></li>
-                                    <li><a href="home.html#tiStick2">Skills</a></li>
-                                    <li><a href="home.html#tiStick3">Interests</a></li>
-                                    <li><a href="home.html#tiStick4">Education</a></li>
-                                </ul>
-                            </details> 
-                        </li>
-                        
-                        <li class="separator">|</li>
-                        <li class="menu-item">
+                <nav>
+                    
+                    <div class="header-divs" id="nav-div">
+
+                        <a href="home.html" id="introTi" class="nav-link">Introduction</a>
+
+                        <ul class="link-lists">
                             <li class="menu-item">
                                 <details>
                                     <summary>
-                                        <a href="projects.html">Projects</a>
+                                        <a href="home.html" class="nav-link">About</a>
+                                    </summary>
+                                    <ul class="drop-down">
+                                        <li><a href="#tiStick2">Skills</a></li>
+                                        <li><a href="#tiStick3">Interests</a></li>
+                                        <li><a href="#tiStick4">Education</a></li>
+                                    </ul>
+                                </details> 
+                            </li>
+                            
+                            
+                            <li class="menu-item">
+                                <details>
+                                    <summary>
+                                        <a href="projects.html" class="nav-link">Projects</a>
                                     </summary>
                                     <ul class="drop-down">
                                         <li><a href="projects.html#tiStick5">Featured</a></li>
@@ -46,13 +50,11 @@
                                     </ul>
                                 </details> 
                             </li>
-                        </li>
-                        <li class="separator">|</li>
-                        <li class="menu-item">
+                            
                             <li class="menu-item">
                                 <details>
                                     <summary>
-                                        <a href="contact.html">Contact</a>
+                                        <a href="contact.html" class="nav-link">Contact</a>
                                     </summary>
                                     <ul class="drop-down">
                                         <li><a href="contact.html#tiStick8">Email</a></li>
@@ -61,94 +63,145 @@
                                     </ul>
                                 </details> 
                             </li>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
             
             
         </header>
 
         <main>
 
-            <section class="sections" id="featured-section">
+            <br>
+
+            <section class="sections scroll-card from-right" id="Introduction-section2">
+
+                    
+                <div id="figure-text">
+                    <figure  id="figure4">
+            
+                        <br>
+                        <img src="img/imgProjects.png"
+                            alt="PictureOfMe">
+                    </figure>
+                    
+                    
+                    <div  id="opening-paragraph">
+                        <p><strong>Showcase of</strong></p>
+                        <br>
+                        <p id="par-nome"><strong>Project Section</strong></p>
+                        <br>
+                        <p> This section displays a selection of projects that reflect 
+                            my academic path, professional experiences, and personal 
+                            interests in computer science. Each project represents a 
+                            different stage of my growth as a developer, ranging from 
+                            applied automation and AI-driven solutions to full-stack 
+                            and front-end web development.
+                            Through these works, I focused on building practical, 
+                            well-structured solutions while experimenting with different 
+                            technologies, tools, and design approaches. The projects are 
+                            grouped into featured, academic, and personal categories to 
+                            highlight both real-world applications and learning-oriented 
+                            experiences that have shaped my technical mindset and 
+                            problem-solving approach.
+                        </p>
+                    </div>
+
+                </div>
+                <br>
+            </section>    
+
+            <br>
+
+            <section class="sections" id="featured-section1">
+
+                <br>
                 <div class="titles">
                     <h3 class="title-sticky" id="tiStick5"><strong>Featured</strong></h3>
                 </div>
 
-
-                <figure class="figures" id="figure2">
+                <div class="copilot scroll-card from-left" >
+                    <figure class="figures" id="figure2">
             
-                    <br>
-                    <img src="img/CopilotStudio.png"
-                        alt="CopilotChat">
+                        <br>
+                        <img src="img/CopilotStudio.png"
+                            alt="CopilotChat">
                     <figcaption>CS Chat Interface</figcaption>
-                </figure>
-            
-            
-                <div class="paragraphs" id="cS-paragraph">
-                    <p><strong>Project 1 - Copilot Studio</strong></p>
-                    <br>
-                    <p> I worked on the design and development of a Retrieval-Augmented 
-                        Generation (RAG) chatbot based on large language models, 
-                        created to provide practical and reliable support to both 
-                        internal operators and assisted users in navigating a large 
-                        and heterogeneous document repository. The solution was developed 
-                        using Microsoft Copilot Studio and focused on improving accessibility to information while maintaining clarity, consistency, and usability.
-                        The chatbot architecture was structured around three distinct 
-                        automated flows, each with a specific responsibility within the 
-                        conversational lifecycle. The first flow handled the 
-                        initialization of the conversation, managing user greetings, 
-                        context setup, and intent recognition. The second flow was 
-                        dedicated to the core conversational logic, where user queries 
-                        were processed, relevant documents were retrieved, and responses 
-                        were generated using a RAG approach to ensure accurate and 
-                        context-aware answers. A third fallback flow was implemented 
-                        to manage ambiguous inputs, unsupported requests, or 
-                        low-confidence scenarios, allowing the system to gracefully 
-                        handle errors and guide the user toward clearer interactions.
-                        This modular design improved the robustness, maintainability, 
-                        and scalability of the chatbot, while also reinforcing my 
-                        experience in conversational system design, workflow 
-                        orchestration, and the practical application of large language 
-                        models in real-world, information-intensive environments.
-                    </p>
+                    </figure>
+                
+                
+                    <div id="hobby-paragraph">
+                        <p><strong id="par-tit">Project 1 - Copilot Studio</strong></p>
+                        <br>
+                        <p> I worked on the design and development of a Retrieval-Augmented 
+                            Generation (RAG) chatbot based on large language models, 
+                            created to provide practical and reliable support to both 
+                            internal operators and assisted users in navigating a large 
+                            and heterogeneous document repository. The solution was developed 
+                            using Microsoft Copilot Studio and focused on improving accessibility to information while maintaining clarity, consistency, and usability.
+                            The chatbot architecture was structured around three distinct 
+                            automated flows, each with a specific responsibility within the 
+                            conversational lifecycle. The first flow handled the 
+                            initialization of the conversation, managing user greetings, 
+                            context setup, and intent recognition. The second flow was 
+                            dedicated to the core conversational logic, where user queries 
+                            were processed, relevant documents were retrieved, and responses 
+                            were generated using a RAG approach to ensure accurate and 
+                            context-aware answers. A third fallback flow was implemented 
+                            to manage ambiguous inputs, unsupported requests, or 
+                            low-confidence scenarios, allowing the system to gracefully 
+                            handle errors and guide the user toward clearer interactions.
+                            This modular design improved the robustness, maintainability, 
+                            and scalability of the chatbot, while also reinforcing my 
+                            experience in conversational system design, workflow 
+                            orchestration, and the practical application of large language 
+                            models in real-world, information-intensive environments.
+                        </p>
+                    </div>
+
                 </div>
 
-                <figure class="figures" id="figure3">
-            
-                    <br>
-                    <img src="img/n8n-flow.png"
-                        alt="CopilotChat">
-                    <figcaption>N8N Flow</figcaption>
-                </figure>
+            </section>
 
-                <div class="paragraphs" id="n8n-paragraph">
-                    <p><strong>Project 2 - N8N</strong></p>
-                    <br>
-                    <p> I designed and implemented an automated OCR-based workflow aimed 
-                        at extracting structured information from medical prescription 
-                        documents and securely storing it in a PostgreSQL database. 
-                        The entire pipeline was developed using n8n as the orchestration 
-                        environment, enabling seamless integration between email 
-                        services, cloud-based processing, external OCR APIs, and database 
-                        systems. The workflow begins when a user submits a document by 
-                        sending it to a dedicated bot email address. The attachment is 
-                        automatically received and processed, then optimized through 
-                        compression using Cloudinary to reduce file size while preserving 
-                        readability. Once prepared, the document is sent to the OCR.Space 
-                        service via structured POST and GET requests, where textual data 
-                        is extracted from the image or PDF content. After extraction, the 
-                        relevant information is parsed, validated, and stored in a 
-                        PostgreSQL database for long-term archiving and retrieval. 
-                        To complete the process, the system automatically sends a 
-                        confirmation email via Gmail, notifying the user that the 
-                        document has been successfully received, processed, and 
-                        archived. This project strengthened my experience in workflow 
-                        automation, API integration, asynchronous processing, and data 
-                        persistence, while highlighting the importance of reliability 
-                        and traceability in healthcare-related digital systems.
-                    </p>
+            <section class="sections" id="featured-section2">
+
+                <div class="n8n scroll-card from-right" >
+                    <figure class="figures" id="figure3">
+                
+                        <br>
+                        <img src="img/n8n-flow.png"
+                            alt="CopilotChat">
+                        <figcaption >N8N Flow</figcaption>
+                    </figure>
+
+                    <div class="paragraphs" id="n8n-paragraph">
+                        <p><strong id="par-tit">Project 2 - N8N</strong></p>
+                        <br>
+                        <p> I designed and implemented an automated OCR-based workflow aimed 
+                            at extracting structured information from medical prescription 
+                            documents and securely storing it in a PostgreSQL database. 
+                            The entire pipeline was developed using n8n as the orchestration 
+                            environment, enabling seamless integration between email 
+                            services, cloud-based processing, external OCR APIs, and database 
+                            systems. The workflow begins when a user submits a document by 
+                            sending it to a dedicated bot email address. The attachment is 
+                            automatically received and processed, then optimized through 
+                            compression using Cloudinary to reduce file size while preserving 
+                            readability. Once prepared, the document is sent to the OCR.Space 
+                            service via structured POST and GET requests, where textual data 
+                            is extracted from the image or PDF content. After extraction, the 
+                            relevant information is parsed, validated, and stored in a 
+                            PostgreSQL database for long-term archiving and retrieval. 
+                            To complete the process, the system automatically sends a 
+                            confirmation email via Gmail, notifying the user that the 
+                            document has been successfully received, processed, and 
+                            archived. This project strengthened my experience in workflow 
+                            automation, API integration, asynchronous processing, and data 
+                            persistence, while highlighting the importance of reliability 
+                            and traceability in healthcare-related digital systems.
+                        </p>
+                    </div>
                 </div>
             </section>
 
@@ -157,8 +210,8 @@
                     <h3 class="title-sticky" id="tiStick6"><strong>Academic</strong></h3>
                 </div>
             
-                <div class="paragraphs" id="academic-paragraph1">
-                    <p><strong>Project 1 - Online Handcraft e-commerce</strong></p>
+                <div class="scroll-card from-left" id="hobby-paragraph">
+                    <p><strong id="par-tit">Project 1 - Online Handcraft e-commerce</strong></p>
                     <br>
             
                     <p>I developed a full-stack e-commerce platform for handcrafted 
@@ -180,8 +233,8 @@
                     </p>
                 </div>
 
-                <div class="paragraphs" id="academic-paragraph2">
-                    <p><strong>Project 2 - My Audio</strong></p>
+                <div class="paragraphs scroll-card from-right" id="academic-paragraph2">
+                    <p><strong id="par-tit">Project 2 - My Audio</strong></p>
                     <br>
             
                     <p>I developed an Android application using Kotlin in Android Studio 
@@ -205,8 +258,8 @@
                     <h3 class="title-sticky" id="tiStick7"><strong>Personal</strong></h3>
                 </div>
 
-                <div class="paragraphs" id="personal-paragraph1">
-                    <p><strong>Project 1 - Gourmet-restaurant</strong></p>
+                <div class="scroll-card from-left" id="hobby-paragraph">
+                    <p><strong id="par-tit">Project 1 - Gourmet-restaurant</strong></p>
                     <br>
                     <p> I created a website for a Korean restaurant, primarily using HTML 
                         with some CSS for styling. The project includes a main page 
@@ -221,8 +274,8 @@
                     </p>
                 </div>
 
-                <div class="paragraphs" id="personal-paragraph1">
-                    <p><strong>Project 2 - Personal-Site</strong></p>
+                <div class="paragraphs scroll-card from-right" id="personal-paragraph1">
+                    <p><strong id="par-tit">Project 2 - Personal-Site</strong></p>
                     <br>
                     <p> This project consists of the personal portfolio website you are 
                         currently viewing. It is built using HTML, CSS, and a bit of 

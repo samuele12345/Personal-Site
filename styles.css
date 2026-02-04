@@ -1,5 +1,5 @@
 *{
-    font-family: Arial, sans-serif;
+    
     margin: 0px;
     
     box-sizing: border-box;
@@ -8,7 +8,37 @@
 html, body {
     margin: 0;
     padding: 0;
+    overflow-x: hidden; /* niente scroll orizzontale */
 }
+
+header{
+    font-family: 'Playfair Display', serif;
+    
+}
+
+#img-logo{
+    height: 80%;
+    width: auto;
+    object-fit: contain;
+    margin-left: 10%;
+    border: 1px black solid;
+    border-radius: 5px;
+    
+}
+
+
+body{
+    font-family: 'Inter', sans-serif;
+    
+    
+
+}
+
+footer{
+    font-family: 'Playfair Display', serif;
+}
+
+
 
 .separator {
     pointer-events: none; /* non cliccabile */
@@ -22,8 +52,8 @@ body {
     linear-gradient(
       90deg,
       rgba(90, 125, 204, 0.25),
-      transparent 25%,
-      transparent 75%,
+      #a8b8d0,
+      #a8b8d0,
       rgba(90, 125, 204, 0.25)
     ); /* laterale */
   background-blend-mode: overlay; /* fa risaltare il blu */
@@ -36,49 +66,21 @@ main{
 }
 
 .title-sticky{
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
-    border-radius: 50px;
     padding-left: 30px;
     padding-right: 30px;
     position: sticky;
     top: 20px;
-    background: rgba(90, 125, 204, 0.85);
+    background: linear-gradient(90deg, transparent, rgba(90, 125, 204, 0.85), transparent);
     z-index: 1;
 }
 
-#header-div{
-    
-    color: grey;
-    background-color: #2F3E5C;
-    height: auto;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    border-bottom: 2px solid black;
-    border-top: 2px solid black;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0px 0px 30px 30px ;
-
+#mainTitle{
+    font-family: 'Playfair Display', serif;
 }
 
-#header-div > h1, h2{
-    margin-left: 10px;
-    display: inline-block;
-}
-
-#header-div > h1{
-    text-shadow: 
-        -1px -1px 0 black,
-        1px -1px 0 black,
-        -1px  1px 0 black,
-        2px  2px 0 black;
-}
 
 #header-div > h2{
+    margin-right: 10%;
     text-shadow: 
         -1px -1px 0 black,
         1px -1px 0 black,
@@ -86,21 +88,56 @@ main{
         1px  1px 0 black;
 }
 
+#header-div > h1{
+    margin-left: 10px;
+    position: relative;
+    z-index: 2;
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        2px  2px 0 black;
+}
+
+#header-div{
+    
+    color: #dde7f2;
+    background-color: #2F3E5C;
+    height: 70px;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: row;
+    border-top: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid black;
+
+}
+
+
+.header-divs a {
+  text-decoration: none;
+  color: black;
+}
 
 
 #nav-div{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-    background-color: #a8b8d0; /* pensare a un linear gradient
+    padding-left: 10%;
+    padding-right: 10%;
+    /* background-color: #a8b8d0;  pensare a un linear gradient
     per migliorare l'effetto dello sticky */
     top: 0px;
-    border-bottom: 1px solid black;
-    border-radius: 30px 30px 0px 0px;
+    background: linear-gradient(#2F3E5C, #a8b8d0, transparent);
 }
+
+
 
 #nav-div > ul > li{
     position: relative; /* mantiene il flusso, serve per eventuali dropdown */
@@ -113,10 +150,60 @@ main{
     display: flex;
 }
 
-#nav-div > ul > li:hover{
-    background: linear-gradient(#a8b8d0, #5A7DCC) no-repeat;
-    border-bottom: 1px solid black;
+#introTi:hover{
+    background: linear-gradient(transparent, #a8b8d0, #5A7DCC, transparent) no-repeat;
     display: flex;
+}
+
+.drop-down > li:hover{
+    border-bottom: 1px black solid;
+}
+
+#nav-div > ul > li:hover{
+    background: linear-gradient(transparent, #a8b8d0, #5A7DCC, transparent) no-repeat;
+    display: flex;
+}
+
+#par-nome{
+    font-size: 40px;
+    color: #2F3E5C;
+    text-shadow: 
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px  1px 0 black,
+        2px  2px 0 black;
+}
+
+#par-tit{
+    font-size: 20px;
+    color: #5A7DCC;
+    text-shadow: 
+        -0px -0px 0 black,
+        0px -0px 0 black,
+        -0px  0px 0 black,
+        1px  1px 0 black;
+}
+
+#figure-text{
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#carousel-para{
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px
+
 }
 
 
@@ -125,7 +212,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 20px;
     padding: 0px;
     margin: 0px;
     list-style: none;
@@ -138,18 +225,39 @@ main{
 .drop-down{
     list-style: none;
     position: absolute;
-    background: rgba(90, 125, 204, 0.85);
-    border-bottom: 1px solid black;
-    border-left: 1px dotted black;
+    background: linear-gradient(rgba(90, 125, 204, 0.85), transparent);
     padding: 4px 4px;
     z-index: 2;
-    border-radius: 0px 0px 30px 0px
 }
 
 .titles{
     top: 20px;
     display: block;
     z-index: 1;
+}
+
+#Introduction-section2{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#figure1{
+    display: flex;
+    flex-direction: column;
+}
+
+#figure4{
+    display: flex;
+    flex-direction: column;
+}
+
+#figure4 > img{
+    height: 100%;
+    width: 100%;
+    
+    border-bottom: 1px solid #5A7DCC;
+    border-radius: 5px;
+
 }
 
 .figures, .titles{
@@ -163,16 +271,17 @@ main{
 }
 
 #figure1 > img{
-    height: 300px;
-    width: 300px;
-    border-top: 1px solid #5A7DCC;
+    height: 500px;
+    width: 500px;
+    
     border-bottom: 1px solid #5A7DCC;
     border-radius: 5px;
+
 }
 
 #figure2 > img{
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 70%;
     border-top: 1px solid #5A7DCC;
     border-bottom: 1px solid #5A7DCC;
     border-radius: 5px;
@@ -180,8 +289,8 @@ main{
 }
 
 #figure3 > img{
-    height: 50%;
-    width: 50%;
+    height: 70%;
+    width: 70%;
     border-top: 1px solid #5A7DCC;
     border-bottom: 1px solid #5A7DCC;
     border-radius: 5px;
@@ -194,11 +303,22 @@ main{
 
 footer{
     text-align: center;
-    background: #a8b8d0;
     width: 100;
     height: auto;
-    border-top: 1px solid black;
-    border-radius: 30px 30px 0px 0px;
+}
+
+#opening-paragraph{
+    display: flex;
+    
+    padding: 12px 32px;
+    max-width: 700px;
+
+    flex-direction: column;
+    background: linear-gradient(
+        to left,
+        rgba(120, 160, 220, 0.06),
+        transparent
+    );
 }
 
 .paragraphs{
@@ -217,6 +337,92 @@ footer{
         rgba(120, 160, 220, 0.06),
         transparent
     );
+}
+
+
+
+#hobby-paragraph{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 1px solid #5A7DCC;
+    margin: auto;
+    padding: 12px 32px;
+    max-width: 700px;
+
+    background: linear-gradient(
+        to left,
+        rgba(120, 160, 220, 0.18),
+        rgba(120, 160, 220, 0.06),
+        transparent
+    );
+}
+
+
+
+/* Stato iniziale: invisibile e leggermente più piccolo */
+.scroll-card {
+  opacity: 0;               /* trasparente */
+  transform: scale(0.95);   /* leggermente più piccolo */
+  transition: 
+    opacity 0.5s ease-out,  /* transizione di opacità */
+    transform 0.5s ease-out; /* transizione di scala */
+}
+
+
+#main-header {
+  /* Sticky: resta in alto durante lo scroll */
+  position: sticky;
+  top: 0;
+
+  /* Porta l'header sopra gli altri elementi */
+  z-index: 100;
+
+  /* Stato iniziale OBBLIGATORIO (pagina appena caricata) */
+  transform: scale(1);       /* grandezza normale */
+  filter: blur(0px);         /* nessuna sfocatura */
+
+  /* Transizioni fluide quando JS modifica scale e blur */
+  transition:
+    transform 0.15s ease-out,
+    filter 0.15s ease-out;
+
+  /* Ottimizzazione performance per animazioni */
+  will-change: transform, filter;
+}
+
+
+
+/* Stato attivo: visibile e scala normale */
+.scroll-card.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stato iniziale: invisibile e spostato a destra */
+.scroll-card.from-right {
+  opacity: 0;                     /* invisibile */
+  transform: translateX(300px);    /* spostata a destra */
+  transition: 
+    opacity 3s ease-out,
+    transform 2s ease-out;
+}
+
+/* Stato iniziale: invisibile e spostato a sinistra */
+.scroll-card.from-left {
+  opacity: 0;                     /* invisibile */
+  transform: translateX(-300px);   /* spostata a sinistra */
+  transition: 
+    opacity 3s ease-out,
+    transform 2s ease-out;
+}
+
+/* Stato attivo: torna alla posizione naturale */
+.scroll-card.from-right.visible,
+.scroll-card.from-left.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 #education-paragraph{
@@ -254,7 +460,7 @@ footer{
     align-items: center;
     flex-direction: row;
     padding-top: 20px;
-    max-width: 400px;
+    max-width: 500px;
     margin: 40px auto;
     gap: 10px;
 }
@@ -275,8 +481,8 @@ footer{
 }
 
 .skill-logo {
-    width: 125px;
-    height: 125px;
+    width: 350px;
+    height: 350px;
     object-fit: contain;
     flex-shrink: 0; /* serve a impedire che un elemento all'interno di un contenitore
     flexbox si rimpicciolisca, anche quando lo spazio disponibile nel contenitore 
@@ -287,21 +493,46 @@ footer{
     padding: 10px;
 }
 
+#emojies-para{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 10%;
+    padding-right:0px;
+    width: 100%;
+}
+
 .emojies > h4{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-direction: row;
-    font-size: 20px;
-    padding-left: 10px;
-    padding-right:10px;
-    border-left: 1px solid #5A7DCC;
-    border-right: 1px solid #5A7DCC;
+    flex-direction: column;
+    font-size: 100px;
     border-radius: 5px;
 }
 
+.copilot{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5%;
+
+}
+
+.n8n{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 5%;
+}
+
 .footer{
+    background: linear-gradient(#dde7f2, #a8b8d0, #a8b8d0, #a8b8d0);
+    font-size: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;

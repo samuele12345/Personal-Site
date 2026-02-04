@@ -3,41 +3,46 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> About | Personal Site</title>
+        <title> Contact | Personal Site</title>
         <link href="styles.css" rel="stylesheet">
         <script src="script.js" defer></script> <!-- con defer carica dopo l'html-->
     </head>
 
     <body>
         <header>
-            <div class="header-divs" id="header-div">
-                <h1>Samuele Riva</h1>
-                <h2> - Aspiring professional programmer</h2>
-            </div>
 
-            <nav>
-                <div class="header-divs" id="nav-div">
-                    <ul class="link-lists">
-                        <li class="menu-item">
-                            <details>
-                                <summary>
-                                    <a href="home.html">About</a>
-                                </summary>
-                                <ul class="drop-down">
-                                    <li><a href="home.html#tiStick1">Introduction</a></li>
-                                    <li><a href="home.html#tiStick2">Skills</a></li>
-                                    <li><a href="home.html#tiStick3">Interests</a></li>
-                                    <li><a href="home.html#tiStick4">Education</a></li>
-                                </ul>
-                            </details> 
-                        </li>
-                        
-                        <li class="separator">|</li>
-                        <li class="menu-item">
+            <div id="main-header">
+                <div class="header-divs" id="header-div">
+                    <img id="img-logo" src="img\logoPersonale.png">
+                    <h1>Samuele Riva</h1>
+                    <h2>Personal Site</h2>
+                </div>
+
+                <nav>
+                    
+                    <div class="header-divs" id="nav-div">
+
+                        <a href="home.html" id="introTi" class="nav-link">Introduction</a>
+
+                        <ul class="link-lists">
                             <li class="menu-item">
                                 <details>
                                     <summary>
-                                        <a href="projects.html">Projects</a>
+                                        <a href="home.html" class="nav-link">About</a>
+                                    </summary>
+                                    <ul class="drop-down">
+                                        <li><a href="#tiStick2">Skills</a></li>
+                                        <li><a href="#tiStick3">Interests</a></li>
+                                        <li><a href="#tiStick4">Education</a></li>
+                                    </ul>
+                                </details> 
+                            </li>
+                            
+                            
+                            <li class="menu-item">
+                                <details>
+                                    <summary>
+                                        <a href="projects.html" class="nav-link">Projects</a>
                                     </summary>
                                     <ul class="drop-down">
                                         <li><a href="projects.html#tiStick5">Featured</a></li>
@@ -46,25 +51,23 @@
                                     </ul>
                                 </details> 
                             </li>
-                        </li>
-                        <li class="separator">|</li>
-                        <li class="menu-item">
+                            
                             <li class="menu-item">
                                 <details>
                                     <summary>
-                                        <a href="contact.html">Contact</a>
+                                        <a href="contact.html" class="nav-link">Contact</a>
                                     </summary>
                                     <ul class="drop-down">
-                                        <li><a href="projects.html#tiStick8">Email</a></li>
-                                        <li><a href="projects.html#tiStick9">Linkedin</a></li>
-                                        <li><a href="projects.html#tiStick10">Github</a></li>
+                                        <li><a href="contact.html#tiStick8">Email</a></li>
+                                        <li><a href="contact.html#tiStick9">Linkedin</a></li>
+                                        <li><a href="contact.html#tiStick10">Github</a></li>
                                     </ul>
                                 </details> 
                             </li>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
             
             
         </header>
@@ -72,11 +75,13 @@
         <main>
 
             <section class="sections" id="email-section">
+
+                <br>
                 <div class="titles">
                     <h3 class="title-sticky" id="tiStick8"><strong>Email</strong></h3>
                 </div>
             
-                <div class="paragraphs" id="email-paragraph">
+                <div class="paragraphs scroll-card from-right" id="email-paragraph">
                     <p><strong>samueleriva2016@gmail.com</strong></p>
                     <br>
                     <p> Feel free to send me an email for collaboration, questions, or project inquiries.
@@ -91,7 +96,7 @@
                     <h3 class="title-sticky" id="tiStick9"><strong>Linkedin</strong></h3>
                 </div>
             
-                <div class="paragraphs" id="linkedin-paragraph1">
+                <div class="scroll-card from-left" id="hobby-paragraph">
                     <p><strong><a href="https://www.linkedin.com/in/samuele-riva-29aa5b282" target="_blank">Link to my Linkedin</a></strong></p>
                     <br>
             
@@ -106,7 +111,7 @@
                     <h3 class="title-sticky" id="tiStick10"><strong>Github</strong></h3>
                 </div>
 
-                <div class="paragraphs" id="github-paragraph1">
+                <div class="paragraphs scroll-card from-right" id="github-paragraph1">
                     <p><strong><a href="https://github.com/samuele12345" target="_blank">Link to my GitHub</a></strong></p>
                     <br>
                     <p> Check out my GitHub repositories to explore my 
