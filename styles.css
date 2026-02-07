@@ -465,6 +465,20 @@ footer{
     gap: 10px;
 }
 
+.arrow{
+    background-color: none;
+    border: none;
+}
+
+.arrow:hover{
+    background: linear-gradient(90deg, transparent, #a8b8d0, transparent);
+}
+
+.arrow{
+    height: 30%;
+    width: 30%;
+}
+
 .carousel {
     display: flex;
     gap: 20px;
