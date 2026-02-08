@@ -598,3 +598,215 @@ footer{
     width: 10%;
     background-color: black;
 }
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+/* TABLET */
+@media (max-width: 1024px) {
+
+  #nav-div {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #figure-text,
+  #carousel-para {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  #figure1 > img,
+  #figure2 > img,
+  #figure3 > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .skill-logo {
+    width: 250px;
+    height: 250px;
+  }
+
+  .footer {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  #header-div {
+    flex-direction: column;
+    height: auto;          /* 🔑 */
+    padding: 10px 0;
+    gap: 5px;
+    text-align: center;
+  }
+
+    #img-logo {
+    margin-left: 0;
+    height: 50px;
+  }
+
+  #nav-div {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .copilot{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .n8n{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+   #par-nome {
+    font-size: 28px;
+  }
+
+   #par-tit {
+    font-size: 16px;
+  }
+
+  #img-logo {
+    margin-left: 0;
+    height: 50px;
+  }
+
+  .carousel{
+    display: flex;
+    width: 30%;
+    height: auto;
+  }
+
+  .skills-carousel-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+
+  .sections{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .arrow{
+    width: 30px;
+    height: auto;
+  }
+
+
+  .link-lists {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #figure-text {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .paragraphs,
+  #opening-paragraph,
+  #hobby-paragraph {
+    border: none;
+    background: none;
+    padding: 16px;
+  }
+
+  #header-div > h2 {
+    margin-right: 0;        /* 🔑 rimuove lo shift */
+    text-align: center;
+  }
+
+  #header-div > h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .figures,
+  .titles {
+    position: static; /* niente sticky su mobile */
+  }
+
+  .skill-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  .emojies > h4 {
+    font-size: 60px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+}
+
+
+/* MOBILE SMALL */
+@media (max-width: 480px) {
+
+  #par-nome {
+    font-size: 28px;
+  }
+
+  #par-tit {
+    font-size: 16px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  .skills-carousel-wrapper{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 70%;
+    padding: 0px;
+  }
+
+  .carousel{
+    display: flex;
+    width: 60%;
+    height: auto;
+  }
+
+  .skill-logo {
+    width: 130px;
+    height: 130px;
+  }
+
+  .scroll-card.from-right {
+  transform: translateX(20%);
+}
+
+  .scroll-card.from-left {
+    transform: translateX(-20%);
+  }
+
+  
+  
+
+  .figures{
+    width: 250px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
